@@ -12,9 +12,9 @@ with open('model.pkl', 'rb') as f:
 
 @app.route('/')
 def home():
-    return "✅ AI Supply Chain Backend is running!"
+    return " AI Supply Chain Backend is running!"
 
-@app.route('/predict', methods=['POST'])  # Accept POST requests here
+@app.route('/predict', methods=['POST'])  # Accept POST requests 
 def predict():
     try:
         data = request.get_json()
